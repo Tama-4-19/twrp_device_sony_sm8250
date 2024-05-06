@@ -1,36 +1,46 @@
-# TWRP/Orange Fox Recovery Device Tree For Xperia 1 II (pdx203)
+# TWRP device tree for Xperia 1II
 
-## Xperia 1 II (Codename pdx203)
+Xperia 1II (codenamed _"pdx203"_) is a high-end smartphone from Sony.
 
-### This device tree can only compile Android 12.1 based FBE_V2 Recovery now.
+It was announced & released on February 2020.
 
-### Almost everything works, But Recovery will not be able to use, if you try to use this recovery on FBE_V1 firmware.
+## Device specifications
 
-> This Device Tree is based on [sekaiacg](https://github.com/sekaiacg)'s xiaomi sm8250 TWRP device tree and  [hellobbn](https://github.com/hellobbn)'s edo-common device tree.
->
-> NOOB project but it has been tested, commit history is cleaning up.
->
-> Here is a credit list to Thank those kinda bro who help me to build it and fix it !
+Basic   | Spec Sheet
+-------:|:-------------------------
+SoC     | Snapdragon® 865 (SM8250)
+CPU     | 1x2.84 GHz Cortex-A77 & 3x2.42 GHz Cortex-A77 & 4x1.8 GHz Cortex-A55
+GPU     | Adreno 650
+Memory  | 8/12 GB RAM
+Shipped Android Version | 10.0
+Storage | 128/256 GB
+Battery | Li-Ion 4000 mAh, non-removable, graphene-enhanced
+Display | 1644 x 3840 pixels, 21:9 ratio (~642 ppi density), 6.50 inches, OLED, 60Hz, Dolby Vision, HDR10+
 
-## Works
+## Device picture
 
-Decryption (Only on FBE_V2 ROMs)
+![Xperia 1II](https://www.sony.com.hk/image/7723dbfd94d35c7e9b9b854576fbe90d?fmt=pjpeg&wid=2000&bgcolor=F1F5F9&bgc=F1F5F9&qlt=85)
 
-Touchscreen
+## Features
 
-Fastbootd
+Works:
 
-Flash ROMs zip from sdcard or data/media
+- [X] ADB
+- [X] Decryption
+- [X] Display
+- [X] Fasbootd
+- [X] Flashing
+- [X] MTP
+- [X] Sideload
+- [X] USB OTG
+- [X] Vibrator
 
-Adb sideload
+## To use it:
 
-Flash dynamic partition image
+```
+fastboot flash recovery recovery.img
+```
 
-Vibration
-
-## Not Works
-
-USB-OTG
 
 ## Thanks
 
@@ -48,7 +58,7 @@ USB-OTG
 
 - [Xperia 1 II Old OrangeFox device tree by EggOxygen, although he delete it](https://github.com/ShirokaneShizuku/twrp_device_sony_pdx203)
 
-  [Xperia 1 II lineage 17.1 device tree by sjllls, the origin one](https://github.com/sjllls/android_device_sony_pdx203))
+- [Xperia 1 II lineage 17.1 device tree by sjllls, the origin one](https://github.com/sjllls/android_device_sony_pdx203))
 
 ## Credits
 
